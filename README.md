@@ -21,8 +21,6 @@ options.add_argument("start-maximized")
 driver = webdriver.Chrome(chrome_options=options, executable_path=r'C:\Driver\chromedriver.exe')
 ```
 
-    C:\Users\vogel\.conda\envs\work\lib\site-packages\ipykernel_launcher.py:3: DeprecationWarning: use options instead of chrome_options
-      This is separate from the ipykernel package so we can avoid doing imports until
     
 
 ### List with the products you want to crawl
@@ -133,9 +131,6 @@ for product in product_list:
 
 driver.close()
 ```
-
-    C:\Users\vogel\.conda\envs\work\lib\site-packages\ipykernel_launcher.py:3: DeprecationWarning: use options instead of chrome_options
-      This is separate from the ipykernel package so we can avoid doing imports until
     
 
     ('XFX AMD Radeon RX580 GTS XXX Edition Grafikkarte 8GB Speicher Mining, Schwarz', '620,00\xa0€', 'https://www.amazon.de/XFX-Radeon-Grafikkarte-Speicher-Schwarz/dp/B06Y66K3XD/ref=sr_1_1?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=rx+580+8g&qid=1617643702&sr=8-1')
