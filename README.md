@@ -222,27 +222,4 @@ driver.close()
     ('Corsair Obsidian Series 750D Airflow Edition PC-Gehäuse (Seitenfenster Full Tower ATX High Airflow Performance) schwarz', '147,77\xa0€', 'https://www.amazon.de/gp/slredirect/picassoRedirect.html/ref=pa_sp_btf_aps_sr_pg8_1?ie=UTF8&adId=A00137663B4Q9LFIM12DQ&url=%2FCorsair-Obsidian-PC-Geh%25C3%25A4use-Seitenfenster-Performance%2Fdp%2FB00YJJBFIO%2Fref%3Dsr_1_119_sspa%3F__mk_de_DE%3D%25C3%2585M%25C3%2585%25C5%25BD%25C3%2595%25C3%2591%26dchild%3D1%26keywords%3Drx%2B580%2B8g%26qid%3D1617643719%26sr%3D8-119-spons%26psc%3D1&qualifier=1617643719&id=8741623108871404&widgetName=sp_btf')
     
 
-
-    ---------------------------------------------------------------------------
-
-    AttributeError                            Traceback (most recent call last)
-
-    <ipython-input-12-660430dca4c7> in <module>
-          9 for product in product_list:
-         10     while True:
-    ---> 11         direct_url = generate_url(product) # Generate an Amazon URL from a search word
-         12         soup = access_data(direct_url) # Access Website
-         13         product_content = soup.find_all('div', {'data-component-type': 's-search-result'}) #access every product in the list on the website
-    
-
-    <ipython-input-5-d28916580a42> in generate_url(search_word)
-          3 def generate_url(search_word):
-          4     url = 'https://www.amazon.de/s?k={}&__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_1'
-    ----> 5     search_word = search_word.replace(' ', '+')
-          6     return url.format(search_word)
-    
-
-    AttributeError: 'NoneType' object has no attribute 'replace'
-
-
 ### Great Job!
